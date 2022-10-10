@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>First Meeting Minutes</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="The meeting minutes for our first meeting">
-    <link rel="icon" type="image/x-icon" href="./images/Cat03.jpg">
-  </head>
-  <body>
-    <header>
-      <h1>Meeting minutes</h1>
-      <p>by Bradley Chester</p>
-    </header>
-    <main>
-      <h2>Brainstorming session</h2>
-      <div class="date">
-        <h3>October 7, 2022</h3>
-      </div>
-      <section>
-        <h1>Attendance</h1>
-        <ul>
-          <li>Bradley</li>
-          <li>Jeff</li>
-          <li>Emily</li>
-        </ul>
-        <h1>Agenda</h1>
-        <ol>
-          <li>Discuss recent achievements</li>
-          <li>Plan for next week</li>
-          <li>What to do about all the <span>cats</span>?</li>
-        </ol>
-      </section>
-    </main>
-    <footer>
-      <p>Author: Bradley Chester</p>
-    </footer>
-  </body>
+
+<head>
+  <title>Meeting Minutes</title>
+  <meta name="description" content="The meeting minutes for our first meeting">
+  <link rel="icon" type="image/x-icon" href="./media/Cat03.jpg">
+</head>
+
+<body>
+  <header>
+    <h1>Cat Corp Meeting Minutes</h1>
+    <nav>
+      <a href="./index.html#dinnerform">Dinner Form</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <h2>Brainstorming session</h2>
+    <div class="date">
+      <h4>October 7, 2022</h4>
+    </div>
+    <details>
+      <summary>Attendance</summary>
+      <ul>
+        <li>Bradley</li>
+        <li>Jeff</li>
+        <li>Emily</li>
+      </ul>
+    </details>
+    <section>
+      <h3>Agenda</h3>
+      <ol>
+        <li>Discuss recent achievements</li>
+        <li>Talk about new shirt designs</li>
+        <li>What to do about all the <span>cats</span>?</li>
+      </ol>
+    </section>
+    <h2>Unfinished Business</h2>
+    <p>Current T-Shirt designs are doing well, profit is steady</p>
+    <p>Jeff's suggestion for a <strong>new</strong> <b>factory</b> has been going well.</p>
+    <h2>New Business</h2>
+    <p>New Designs are incoming, example here:</p>
+    <img src="./media/newshirtdesign.png" alt="Emily's new shirt design">
+    <h2>Miscellaneous Comments</h2>
+    <p>When is the next <em>office</em> <i>dinner</i>? Plans still need to be discussed once fiscal year is over, poll
+      to decide is
+      below</p>
+    <form id="dinnerform">
+      <fieldset>
+        <legend>Office Dinner</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="pdate">Preferred Date:</label>
+        <input type="date" id="pdate" name="pdate"><br>
+        <label for="time">Preferred Time:</label>
+        <select name="time" id="time">
+          <option value="7pm">7pm</option>
+          <option value="8pm">8pm</option>
+          <option value="9pm">9pm</option>
+        </select>
+        <p>Can you provide rides?</p>
+        <input type="radio" id="yes" name="rides">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="rides">
+        <label for="no">No</label>
+        <p>If so how many people can you hold?</p>
+        <input type="checkbox" id="1p" name="people">
+        <label for="1p">1</label><br>
+        <input type="checkbox" id="2p" name="people">
+        <label for="2p">2</label><br>
+        <input type="checkbox" id="3plusp" name="people">
+        <label for="3plusp">3+</label>
+        <p>Restaurant Suggestions</p>
+        <label for="restaurant"></label>
+        <input list="restaurants" name="restaurant" id="restaurants">
+        <datalist id="restaurants">
+          <option value="Pizza">Pizza</option>
+          <option value="Steak">Steak</option>
+        </datalist>
+        <p>Anything else to add?</p>
+        <textarea></textarea><br><br>
+        <button type="button">Submit!</button>
+      </fieldset>
+    </form>
+    <h4>Audio and Video Recording</h4>
+    <audio controls>
+      <source src="./media/meeting audio.mp3" type="audio/mpeg">
+    </audio><br>
+    <video width="320" height="240" controls>
+      <source src="./media/Cat - 39009.mp4" type="video/mp4">
+    </video>
+  </main>
+  <footer>
+    <p>Author: Bradley Chester</p>
+  </footer>
+</body>
+
 </html>
