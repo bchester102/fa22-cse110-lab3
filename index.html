@@ -47,43 +47,45 @@
     <p>When is the next <em>office</em> <i>dinner</i>? Plans still need to be discussed once fiscal year is over, poll
       to decide is
       below</p>
-    <form id="dinnerform">
-      <fieldset>
-        <legend>Office Dinner</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br>
-        <label for="pdate">Preferred Date:</label>
-        <input type="date" id="pdate" name="pdate"><br>
-        <label for="time">Preferred Time:</label>
-        <select name="time" id="time">
-          <option value="7pm">7pm</option>
-          <option value="8pm">8pm</option>
-          <option value="9pm">9pm</option>
-        </select>
-        <p>Can you provide rides?</p>
-        <input type="radio" id="yes" name="rides">
-        <label for="yes">Yes</label><br>
-        <input type="radio" id="no" name="rides">
-        <label for="no">No</label>
-        <p>If so how many people can you hold?</p>
-        <input type="checkbox" id="1p" name="people">
-        <label for="1p">1</label><br>
-        <input type="checkbox" id="2p" name="people">
-        <label for="2p">2</label><br>
-        <input type="checkbox" id="3plusp" name="people">
-        <label for="3plusp">3+</label>
-        <p>Restaurant Suggestions</p>
-        <label for="restaurant"></label>
-        <input list="restaurants" name="restaurant" id="restaurant">
-        <datalist id="restaurants">
-          <option value="Pizza">Pizza</option>
-          <option value="Steak">Steak</option>
-        </datalist>
-        <p>Anything else to add?</p>
-        <textarea></textarea><br><br>
-        <button type="button">Submit!</button>
-      </fieldset>
-    </form>
+    <div class="dinner">
+      <form id="dinnerform">
+        <fieldset>
+          <legend>Office Dinner</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="pdate">Preferred Date:</label>
+          <input type="date" id="pdate" name="pdate"><br>
+          <label for="time">Preferred Time:</label>
+          <select name="time" id="time">
+            <option value="7pm">7pm</option>
+            <option value="8pm">8pm</option>
+            <option value="9pm">9pm</option>
+          </select>
+          <p>Can you provide rides?</p>
+          <input type="radio" id="yes" name="rides">
+          <label for="yes">Yes</label><br>
+          <input type="radio" id="no" name="rides">
+          <label for="no">No</label>
+          <p>If so how many people can you hold?</p>
+          <input type="checkbox" id="1p" name="people">
+          <label for="1p">1</label><br>
+          <input type="checkbox" id="2p" name="people">
+          <label for="2p">2</label><br>
+          <input type="checkbox" id="3plusp" name="people">
+          <label for="3plusp">3+</label>
+          <p>Restaurant Suggestions</p>
+          <label for="restaurant"></label>
+          <input list="restaurants" name="restaurant" id="restaurant">
+          <datalist id="restaurants">
+            <option value="Pizza">Pizza</option>
+            <option value="Steak">Steak</option>
+          </datalist>
+          <p>Anything else to add?</p>
+          <textarea></textarea><br><br>
+          <button type="button">Submit!</button>
+        </fieldset>
+      </form>
+    </div>
     <h4>Audio and Video Recording</h4>
     <audio controls>
       <source src="./media/meeting_audio.mp3" type="audio/mpeg">
