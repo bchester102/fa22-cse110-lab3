@@ -1,7 +1,11 @@
 h1{
-    color: blue;
+    color: black;
 }
 
 h2,h3,h4,h5,h6{
-    color: #800000;
+    color: #c20606;
+}
+
+body{
+    background-color: rgb(20, 100, 190);
 }
